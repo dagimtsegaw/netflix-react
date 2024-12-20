@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap>);
+
+:root {
+  --font-base: "Lexend", sans-serif;
+  --font-section: "Inter", sans-serif;
+  --bg-color: #111;
+  --primary-color: #ffff;
+  --secondary-color: #e50914;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}

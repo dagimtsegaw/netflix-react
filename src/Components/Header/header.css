@@ -1,0 +1,114 @@
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+}
+
+.header_outer_container {
+  position: sticky;
+  top: 0;
+  background-color: rgb(20, 20, 20);
+  /* background-color: transparent; */
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: all 0.5s;
+  transition-timing-function: ease-in;
+  z-index: 1;
+}
+.header_container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.header_logo img {
+  width: 100px;
+  margin-right: -40px;
+  margin-left: -40px;
+}
+.header_left a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.header_left a:hover {
+  color: #ccc; /* Change color on hover if desired */
+}
+.header_left {
+  margin-left: -200px;
+}
+.header_left ul {
+  width: 140%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  cursor: pointer;
+}
+.header_right ul {
+  width: 150%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  cursor: pointer;
+}
+.header_right ul li {
+  color: white; /* Ensure the icons are visible on a dark background */
+  font-size: 24px;
+}
+
+.menu_toggle {
+  display: none;
+}
+
+/* Responsive styling */
+@media (max-width: 960px) {
+  .header_left ul {
+    display: none; /* Hide menu on smaller screens */
+  }
+
+  /* Hamburger icon for smaller screens */
+  .menu_toggle {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 50%; /* Vertically center it */
+    transform: translateY(-50%); /* Adjust centering */
+    padding-right: 20px;
+  }
+  /* Make the menu visible when active */
+  .header_left ul.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    z-index: 999;
+  }
+
+  .header_left ul li {
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #444;
+  }
+
+  .header_logo {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Hide icons on smaller screens */
+  .header_right ul {
+    display: none;
+  }
+}
