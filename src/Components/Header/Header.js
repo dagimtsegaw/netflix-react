@@ -19,7 +19,7 @@ const Header = () => {
     <div className="header_outer_container">
       <div className="header_container">
         <div className="header_logo">
-          <img src={Netflixlogo} width="100" />
+          <img src={Netflixlogo} alt="Description of the image" width="100" />
         </div>
         <div className="header_left">
           <ul className={menuActive ? "active" : ""}>
